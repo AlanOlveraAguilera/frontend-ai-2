@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif; /* Tipografia */
+    /* Comentarios en css se usan con estos signos  */
+    line-height: 1.5; /*Controla la altura de cada 
+    linea de texto para mejorar la legitibilidad*/
+}
+
+header{
+    background-color: #5a2490;
+/* https://htmlcolorcodes.com/es/ */
+}
