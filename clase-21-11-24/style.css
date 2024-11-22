@@ -1,16 +1,40 @@
+/* Variable de css */
+/* -Son Valores reutilizables definidos mediante la sintaxis "--nombre-variable". 
+   -permiten centralizar
+*/
+
+/* Selector :root */
+/* - :root es un pseudo-clase que selecciona el elemento raiz del documento (html).
+   - Es util
+   - Tambien puedes declarar variables en otros selectores de clases
+*/
+
+:root{
+    --color-primario : #007bff;
+    --color-backgroun: #f4f4f9;
+    --color-acentos: #e3f2fd;
+    --color-bordes:  #ddd;
+    --color-texto: #333;
+    --color-secundario: #fff;
+    
+
+
+
+}
+
 /* Reset Basico */
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: var(--color-backgroun);
     color: #333;
 }
 
 header{
     text-align: center;
-    background-color: #007bff;
+    background-color: var(--color-primario);
     color: #fff;
     padding: 20px;
 }
@@ -33,7 +57,7 @@ h2{
 
 .box{
     background-color: #e3f2fd;
-    border: 1px solid #007bff;
+    border: 1px solid var(--color-primario);
     margin: 10px auto;
     /* El valor auro en la propiedad de margin hace que el navegador calcule
     automaticamente el espacio necesario para centrar un elemento dentro de su contenedor padre
@@ -65,7 +89,7 @@ h2{
 
 .model{
     padding: 20px;
-    border: 10px solid #007bff;
+    border: 10px solid var(--color-primario);
     margin: 20px;
 
 
@@ -81,7 +105,8 @@ h2{
 }
 
 .border-box{
-    box-sizing: border-box;
+    box-sizing: border
+    -box;
     margin: 10px;
     padding: 20px;
     border: 10px;
