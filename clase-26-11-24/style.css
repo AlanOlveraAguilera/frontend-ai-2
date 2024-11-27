@@ -33,6 +33,10 @@ header h1{
     color: #2a9d8f;
 }
 
+nav ul li{
+
+}
+
 h1{
     color: blueviolet;
 
@@ -41,4 +45,31 @@ h1{
 .author{
     font-weight: bold;
     color: #2a9d8f;
+}
+
+.subtitle{
+    font-size: 18px;
+    color: #264653;
+}
+
+.lista-tareas{
+    list-style: none;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.lista-tareas li{
+    margin-top: 15px;
+}
+
+.tarea-checkbox{
+    margin-right: 10px;
+    accent-color: #2a9d8f;
+    cursor: pointer;
+}
+
+.tarea-checkbox:checked + .tarea-descripcion{
+    text-decoration: line-through;
+    font-style: italic;
+    color: #264653
 }
