@@ -14,16 +14,31 @@ body{
     color: #333;
     background-color: #f4f4f4;
 }
+
+head, main, footer{
+    margin: 0;
+    padding: 20px;
+
+}
+
+footer{
+    text-align: center;
+}
 /* Este es de mayor prioridad que el de abajo debido a que  
 es mas especifico */
 
 /* Segun la propiedad de especificidad se da mayor prioridad 
  */
 header h1{
-    color: blue;
+    color: #2a9d8f;
 }
 
 h1{
     color: blueviolet;
 
+}
+
+.author{
+    font-weight: bold;
+    color: #2a9d8f;
 }
