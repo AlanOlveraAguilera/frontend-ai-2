@@ -1,3 +1,14 @@
+/* VARIABLES */
+:root{
+    --color-primario: #2a9d8f;
+    --color-secundario: #264653;
+    --color-bakground: #f4f4f4;
+    --color-texto: #333;
+
+
+
+
+}
 /* Reset Basico */
 
 *{
@@ -11,8 +22,8 @@ body{
     padding: 0;
     /* Estilos generales aplicados en body */
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
+    color: var(--color-texto);
+    background-color: var(--color-bakground);
 }
 
 head, main, footer{
@@ -30,7 +41,7 @@ es mas especifico */
 /* Segun la propiedad de especificidad se da mayor prioridad 
  */
 header h1{
-    color: #2a9d8f;
+    color: var(--color-primario);
 }
 
 nav ul li{
@@ -44,12 +55,12 @@ h1{
 
 .author{
     font-weight: bold;
-    color: #2a9d8f;
+    color: var(--color-primario);
 }
 
 .subtitle{
     font-size: 18px;
-    color: #264653;
+    color: var(--color-secundario);
 }
 
 .lista-tareas{
@@ -64,12 +75,12 @@ h1{
 
 .tarea-checkbox{
     margin-right: 10px;
-    accent-color: #2a9d8f;
+    accent-color: var(--color-primario);
     cursor: pointer;
 }
 
 .tarea-checkbox:checked + .tarea-descripcion{
     text-decoration: line-through;
     font-style: italic;
-    color: #264653
+    color: var(--color-secundario);
 }
