@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Declara el tipo de documento como HTML5 -->
+<html lang="es">
+  <!-- El elemento <html> es el contenedor principal de toda la página, con el atributo "lang" que especifica el idioma (español) -->
+
+  <head>
+    <!-- El <head> contiene metadatos, como el título y los enlaces a estilos o fuentes -->
+    <meta charset="UTF-8">
+    <!-- El <meta charset> especifica la codificación de caracteres (UTF-8 es la más común) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El <meta name="viewport"> es importante para la responsividad, ajustando la página al tamaño de la pantalla del dispositivo -->
+    <title>Ejemplo de HTML</title>
+    <!-- El <title> establece el título que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- El <link> vincula un archivo externo de estilo CSS (en este caso, "styles.css") -->
+  </head>
+
+  <body>
+    <!-- El <body> contiene el contenido visible de la página -->
+
+    <header>
+      <!-- El <header> es utilizado para encabezados de la página, generalmente contiene navegación y el título principal -->
+      <h1>Bienvenidos a mi página web</h1>
+      <!-- El <h1> es el encabezado principal de la página -->
+      <nav>
+        <!-- El <nav> contiene los enlaces de navegación -->
+        <ul>
+          <!-- El <ul> es una lista no ordenada -->
+          <li><a href="#home">Inicio</a></li>
+          <!-- El <li> es un elemento de lista, el <a> es un enlace que apunta a una ubicación en la página -->
+          <li><a href="#about">Sobre nosotros</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- El <main> contiene el contenido principal de la página -->
+
+      <section id="home">
+        <!-- El <section> es una sección de contenido, y el atributo id permite crear anclas de navegación -->
+        <h2>Bienvenidos</h2>
+        <p>Esta es una introducción a la estructura de una página HTML.</p>
+        <!-- El <p> es un párrafo de texto -->
+      </section>
+
+      <section id="about">
+        <h2>Sobre nosotros</h2>
+        <p>Nos dedicamos a crear contenido educativo de calidad.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contacto</h2>
+        <form action="submit_form.php" method="POST">
+          <!-- El <form> crea un formulario, con el atributo action indicando el destino al que se enviarán los datos -->
+          <label for="name">Nombre:</label>
+          <!-- El <label> está asociado con un campo de formulario, en este caso "name" -->
+          <input type="text" id="name" name="name" required>
+          <!-- El <input> es un campo de entrada, en este caso de tipo "text", con un identificador y nombre -->
+          <br>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          <br>
+          <input type="submit" value="Enviar">
+          <!-- El <input type="submit"> es el botón de envío del formulario -->
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <!-- El <footer> contiene la información de pie de página -->
+      <p>&copy; 2024 Mi página web. Todos los derechos reservados.</p>
+      <!-- El <p> es otro párrafo, y el símbolo &copy; es para el copyright -->
+    </footer>
+
+  </body>
+</html>
