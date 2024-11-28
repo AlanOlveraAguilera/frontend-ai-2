@@ -7,5 +7,30 @@ body {
 
 header{
     background-color: #5a2490;
+    color: aliceblue;
+    text-align: center;
 /* https://htmlcolorcodes.com/es/ */
+}
+
+footer{
+    background-color: #4789;
+}
+
+.menu{
+    list-style: none;
+}
+
+.enlace{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.enlace:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+#titulo-principal{
+    text-decoration: underline;
 }
