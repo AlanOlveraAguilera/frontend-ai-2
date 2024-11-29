@@ -45,7 +45,80 @@ header{
 
 .nav-link:hover , .boton-tema:hover {
     color: #88B04B;
+}
 
 
+/* CARTAS */
 
+.seccion-tarjetas{
+    text-align: center;
+    padding: 20px;
+
+}
+
+.seccion-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+    background-color: #E2F0D9;
+    color: #4ca64c;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba ( 0, 0, 0, 0.2);
+    transition: transform 0.3; background-color: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    background-color: #4ca64c;
+
+}
+
+.especial{
+    /* flex-grow: 0; cuando nosotros no indicamos un valor directo con 
+    flex-grow el valor por defecto es 0 en todos */
+    flex-grow: 2;  
+    /* ocupa mas espacio proporcional*/
+}
+
+.card-hover:hover{
+    transform: rotate(30deg) scale(1.1);
+}
+
+.card:nth-child(1){
+    align-self: flex-end;
+
+}
+
+.card:nth-child(3){
+    order: 1;
+}
+
+/* Formula */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+button{
+    background-color: #a7c957;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #88B04B;
 }
