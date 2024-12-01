@@ -46,7 +46,7 @@ background: linear-gradient(90deg, rgba(177,185,162,1) 0%, rgba(118,113,112,1) 1
 }
 
 .tareas:hover {
-    color: rgb(170, 0, 255); /* Morado brillante y saturado, tipo Arcane */
+    color: rgb(170, 0, 255); /* Morado brillante y saturado */
     text-decoration: underline;
     box-shadow: 0px 4px 15px rgba(138, 43, 226, 0.8); /* Sombra brillante morada tipo neón */
 }
