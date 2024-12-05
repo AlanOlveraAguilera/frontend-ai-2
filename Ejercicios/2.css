@@ -1,0 +1,57 @@
+/* Reset o Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globales */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Tipografía */
+    line-height: 1.5; /* Mejora la legibilidad */
+}
+
+/* Estilos de Estructura */
+header {
+    background: linear-gradient(90deg, rgba(9,29,30,1) 0%, rgba(70,104,118,1) 100%);
+    color: aliceblue;
+    text-align: center;
+    /* https://htmlcolorcodes.com/es/ */
+}
+
+footer {
+    color: aliceblue;
+    background: linear-gradient(90deg, rgba(9,29,30,1) 0%, rgba(70,104,118,1) 100%);
+}
+
+.main {
+    background: linear-gradient(90deg, rgba(177,185,162,1) 0%, rgba(118,113,112,1) 100%);
+}
+
+/* Componentes */
+.menu {
+    list-style: none;
+}
+
+.enlace {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.enlace:hover {
+    color: rgb(230, 180, 50);
+    text-decoration: underline;
+    box-shadow: 0px 4px 15px rgba(255, 196, 58, 0.6);
+}
+
+#titulo-principal {
+    text-decoration: underline;
+}
+
+/* Modificadores y Utilidades */
+.tareas:hover {
+    color: rgb(170, 0, 255); /* Morado brillante y saturado */
+    text-decoration: underline;
+    box-shadow: 0px 4px 15px rgba(138, 43, 226, 0.8); /* Sombra brillante morada */
+}
