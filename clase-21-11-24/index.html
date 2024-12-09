@@ -8,68 +8,110 @@
 </head>
 <body>
     <header>
-        <h1>Explorando el </h1>
-        <p> Esta pagina muestra 
-        </p>
+        <h1>Explorando el box model y display</h1>
+        <p>Esta página muestra cómo reacciona el modelo de cada con diferentes valores de display y box-sizing</p>
     </header>
     <main>
-    <!-- Secciones de pagina -->
-     <section>
-        <h2> Display: Block</h2>
-        <p>Los elementos con display: block </p>
-        <div class="box block">
-            Soy un elemento block
-        </div>
-        <div class="box block">
-            Soy otro elemento
-        </div>
-     </section>
-     <section>
-        <h2> Display: Inline</h2>
-        <p>Los elementos con display:inline solo ocupan el ancho necesario y no aceptan propiedades
-            de tamaño con widht y height.</p>
-        <span class="box inline">
-            Soy inline
-        </span>
-        <span class="box inline">
-            Soy otro inline
-        </span>
-     </section>
 
-     <section>
-        <h2> Display: Inline-Block </h2>
-        <p>Los elementos con display:inline-block solo ocupan el ancho necesario y no aceptan propiedades
-            de tamaño con widht y height.</p>
-        <span class="box inline-block">
-            Soy inline-block
-        </span>
-        <span class="box inline-block">
-            Soy otro inline-block
-        </span>
-     </section>
+        <!-- Secciones de mi pagina -->
+
+        <section>
+            <h2>Display: Block</h2>
+            <p>Los elementos con display: block ocupan el ancho completo disponible y empiezan en una nueva línea.</p>
+            <div class="box block">
+                Soy un elemento block.
+            </div>
+            <div class="box block">
+                Soy otro elemento block.
+            </div>
+         </section>
+     
+         <section>
+            <h2>Display: Inline</h2>
+            <p>Los elementos con display:inline solo ocupan el ancho necesario y no aceptan propiedades de tamaño como width y height.</p>
+            <span class="box inline">
+                Soy inline.
+            </span>
+            <span class="box inline">
+                Soy otro inline.
+            </span>
+         </section>
+
+         <section>
+            <h2>Display: Inline-Block</h2>
+            <p>Los elementos con display:inline-block combinan las características de inline(no ropen línea) con block (aceptan width y height).</p>
+            <span class="box inline-block">
+                Soy inline-block.
+            </span>
+            <span class="box inline-block">
+                Soy otro inline-block.
+            </span>
+         </section>
+
+         <section>
+            <h2>El box model en acción</h2>
+            <p>El box model afecta el espacio y deseño de cada elemento según su display.</p>
+            <div>
+                <h3>Display: Block</h3>
+                <p>Cada elemento de tipo block ocupa el ancho completo y se apilan uno debajo del otro.</p>
+                <p>El padding, border y margin funcionan como se espera.</p>
+                <div class="box block model">
+                    Bloque 1
+                </div>
+                <div class="box block model">
+                    Bloque 2
+                </div>
+            </div>
+
+            <div>
+                <h3> Display: Inline</h3>
+                <p>Los elemenntos inline se alinean horizontalmente con el textto.</p>
+                <p> El margin horizontal (izquiersa y derecha) funaciona, peor el vertical (arriba y abajo) no afecta el flujo del documento. Es decir, se ignoran estas propiedades. </p>
+                <span class="box inline model">
+                    Inline 1
+                </span>
+                <span clas="box inline model">
+                    Inline 2
+                </span>
+            </div>
+            <div>
+                <h3>Display: Inline-Block</h3>
+                <p>Los elementos inline-block se alinean horizontalmente como inline, pero permiten usar width, height, padding, border y margin como los elementos de display block.</p>
+                <span class="box inline-block model">
+                    Inline-block 1
+                </span>
+                <span class="box inline-block model">
+                    Inline-block 2
+                </span>
+            </div>
 
      <section> 
          <h2>El box model en accion </h2>
-         <p>El box model afecta</p>
+         <p>El box model afecta el espacio y deseño de cada elemento según su display.</p>
+         <p>El padding, border y margin funcionan como se espera. </p>
          <div class="box block model">
             Bloque 1
          </div>
          <div class="box block model">
-
+            Bloque 2
          </div>
       </section>
 
       <section>
         <h2>Box-sixing: Content-box vs Border-box</h2>
         <p>La propiedad box-sizing define cómo se calcula</p>
-        <div class="border-box">
+        <div class="content-box">
+            Content-box
 
+        </div>
+        <div class="border-box">
+            Border-box
         </div>
       </section>
 
     </main>
     <footer>
-        2024 Alan Olvera
+        2024 Alan Olvera.Todos los derechos reservados.
     </footer>
      
 
