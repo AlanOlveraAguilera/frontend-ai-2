@@ -10,15 +10,12 @@
 */
 
 :root{
-    --color-primario : #007bff;
+    --color-primario :  #007bff;
     --color-backgroun: #f4f4f9;
     --color-acentos: #e3f2fd;
     --color-bordes:  #ddd;
     --color-texto: #333;
     --color-secundario: #fff;
-    
-
-
 
 }
 
@@ -29,14 +26,14 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--color-backgroun);
-    color: #333;
+    color: var(--color-texto);
     line-height: 1.8;
 }
 
 header{
     text-align: center;
     background-color: var(--color-primario);
-    color: #fff;
+    color: var(--color-secundario);
     padding: 20px;
 }
 
@@ -46,7 +43,7 @@ section{
      el tipo de estilo
      el color */
     border: 3px solid var(--color-bordes);
-    background-color: var(--color-primario);
+    background-color: var(--color-secundario);
     border-radius: 5px;
     padding: 15px;
     margin: 20px;
