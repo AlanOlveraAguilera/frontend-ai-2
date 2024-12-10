@@ -113,3 +113,17 @@ header{
     font-weight: 500;
     font-size: 15px;
 }
+
+.button1:hover{
+    background-color: rgba(128,128, 128, 0.192);
+}
+
+.button2:hover{
+    background-color: grey;
+
+}
+
+.button2{
+    color: white;
+    background-color: #000;
+}
