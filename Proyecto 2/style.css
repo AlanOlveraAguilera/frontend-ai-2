@@ -40,6 +40,7 @@ header{
 }
 
 .logo-img{
+    margin-top: 30px;
     width: 50px;
     margin-right: 20px;
 }
@@ -51,7 +52,7 @@ header{
     align-items: center;
 } 
 
-/* BOTONOS */
+/* BOTONES */
 
 .nav ul,
 .nav div:nth-child(2),
@@ -61,8 +62,7 @@ header{
     align-items: center;
     height: 100px;
 }
-
-.nav div:nth-child(2), .nav .icon-location 
+ 
 
 .nav ul a{
     line-height: 100px;
@@ -80,7 +80,36 @@ header{
 
 }
 
+.nav .location img{
+    padding-top: 5px;
+}
 
+.nav div:nth-child(2) div{
+    margin: 0 10px;
+}
 
+.nav .store{
+    color: black;
+    font-weight: 500;
+    margin-right: 30px;
 
+}
 
+.button1{
+    color: black;
+    padding: 5px 15px;
+    border: 1px solid black ;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.button2{
+    color: black;
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 15px;
+}
