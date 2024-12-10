@@ -20,6 +20,10 @@ body{
 
 }
 
+.icon-location{
+    color: #000;
+}
+
 
 header{
     display: flex;
@@ -47,11 +51,18 @@ header{
     align-items: center;
 } 
 
-.nav ul{
+/* BOTONOS */
+
+.nav ul,
+.nav div:nth-child(2),
+.nav .location,
+.nav .account {
     display: flex;
     align-items: center;
     height: 100px;
 }
+
+.nav div:nth-child(2), .nav .icon-location 
 
 .nav ul a{
     line-height: 100px;
@@ -65,9 +76,11 @@ header{
     display: flex;
     align-items: center;
     height: 100%;
-    border-bottom: 5px solid transparent ;
-    
+    border-bottom: 5px solid transparent ; 
 
 }
+
+
+
 
 
