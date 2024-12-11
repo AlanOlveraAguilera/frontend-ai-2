@@ -31,6 +31,9 @@ header{
     background-color: #fff;
     height: 100px;
     padding: 0 40px;
+    position: relative;
+    box-shadow: rgba(128, 128, 128, 0.726) 0 1px 3px;
+    z-index: 100;
     
 }
 
