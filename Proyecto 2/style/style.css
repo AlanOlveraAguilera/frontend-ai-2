@@ -17,18 +17,10 @@ body {
 
 }
 
-.material-symbols-outlined {
+#bar,
+#cross {
     display: none;
-    color: #fff;
-
-
 }
-
-.icon-location {
-    color: #000;
-}
-
-/* HEADER */
 
 
 header {
@@ -45,16 +37,12 @@ header {
 
 .icon {
     width: 15px;
-
 }
 
 .logo-img {
-    margin-top: 13px;
     width: 50px;
     margin-right: 20px;
 }
-
-/* NAVEGACION */
 
 .nav {
     display: flex;
@@ -62,8 +50,6 @@ header {
     width: 100%;
     align-items: center;
 }
-
-/* BOTONES */
 
 .nav ul,
 .nav div:nth-child(2),
@@ -74,10 +60,8 @@ header {
     height: 100px;
 }
 
-
 .nav ul a{
-    /* agregar flex */
-    line-height: 100px;
+    height: 100px;
 }
 
 .nav ul li {
@@ -87,15 +71,9 @@ header {
     font-size: 16px;
     display: flex;
     align-items: center;
-    height: auto;
+    height: 100%;
     border-bottom: 5px solid transparent ;
-
 }
-
-.nav ul a {
-    line-height: normal;
-}
-
 
 .nav .location img {
     padding-top: 5px;
@@ -109,15 +87,11 @@ header {
     color: black;
     font-weight: 500;
     margin-right: 30px;
-
 }
-
-
-/* BOTONES */
 
 .button1,
 .button2 {
-    color: black;
+    color: #000;
     padding: 5px 15px;
     border: 1px solid black ;
     border-radius: 50px;
@@ -126,10 +100,13 @@ header {
 
 }
 
-
-
 .button1:hover {
     background-color: rgba(128,128, 128, 0.192);
+}
+
+.button2:hover {
+    background-color: grey;
+
 }
 
 .button2 {
@@ -137,10 +114,10 @@ header {
     background-color: #000;
 }
 
-.button2:hover {
-    background-color: grey;
 
-}
+
+/* 000000000000000000000000000000000000000 */
+
 
 /* MEDIA QUERIES */
 
@@ -157,18 +134,12 @@ header {
 
     #bar {
         display: block;
-        color: #000;
-        position: absolute; /* Para poder posicionarlo de forma específica */
-        top: 50%; /* Centra verticalmente según el contenedor */
-        right: 20px; /* Lo mueve hacia la derecha */
-        transform: translateY(-50%); /* Ajusta el centrado preciso */
-        cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+        
+       
     }
 
-
-
     #bar,
-    #cross{
+    #cross {
         cursor: pointer;
     }
 
@@ -191,7 +162,7 @@ header {
 
 /* Cambio  en el nav debido a que no me gusta el espacio que le da */
     .nav div{
-        width: 80%;
+        width: 100%;
     }
 
     .nav ul{
@@ -205,8 +176,9 @@ header {
     }
 
     .nav ul li{
-        font-size: 10px;
+        font-size: 18px;
         padding: 20px;
+        border-bottom: none;
 
 
     }
@@ -234,7 +206,7 @@ header {
 
     }
 
-@media only screen and (max-width: 88px){
+@media only screen and (max-width: 800px) {
     header{
         height: 80px;
         padding: 0 20px;
