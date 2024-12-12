@@ -62,6 +62,13 @@ header {
 }
 
 /*  */
+.nav .account {
+    margin-top: auto;
+    margin-left: auto; /* Alinea `.account` a la derecha */
+    padding: 0 10px; /* Reduce el espacio interior */
+    max-width: 100%; /* Evita que se salga del contenedor */
+    flex-wrap: wrap; /* Ajusta los elementos si el espacio es limitado */
+}
 
 
 
@@ -190,7 +197,7 @@ header {
 
     }
 
-    .nav .nav-option {
+    .nav.nav-option {
         flex-direction: column-reverse;
 
     }
