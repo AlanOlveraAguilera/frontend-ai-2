@@ -11,3 +11,9 @@ bar.addEventListener('click', () => {
   cross.style.display = 'block';
   nav.style.left = '20%' ;
 });
+
+cross.addEventListener('click', ()=>{
+    cross.style.display = 'none';
+    bar.style.display = 'block';
+    nav.style.left = '100%'; 
+})
