@@ -61,16 +61,6 @@ header {
 
 }
 
-/*  */
-.nav .account {
-    margin-top: auto;
-    margin-left: auto; /* Alinea `.account` a la derecha */
-    padding: 0 10px; /* Reduce el espacio interior */
-    max-width: 100%; /* Evita que se salga del contenedor */
-    flex-wrap: wrap; /* Ajusta los elementos si el espacio es limitado */
-}
-
-
 
 .nav ul a{
     line-height: 100%; 
@@ -146,10 +136,7 @@ header {
     }
 
     #bar {
-        display: block;
-        color: #000;
-        
-       
+        display: block;       
     }
 
     #bar,
@@ -162,7 +149,7 @@ header {
     .nav{
         position: absolute;
         top: 100px;
-        left: 20%;
+        left: 100%;
         width: 100%;
         height: 100vh;
         background-color: white;
@@ -197,7 +184,7 @@ header {
 
     }
 
-    .nav.nav-option {
+    .nav .nav-option {
         flex-direction: column-reverse;
 
     }
