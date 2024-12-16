@@ -110,7 +110,7 @@ header {
     border-radius: 50px;
     font-weight: 500;
     font-size: 15px;
-    top: -30px;   
+    top: -18px;   
     position: relative;
 }
 
@@ -198,12 +198,13 @@ header {
 .split-section img {
   max-width: 100%; /* Limitar ancho de la imagen */
   height: auto; /* Mantener proporción */
-  margin-bottom: 30px; /* Espacio entre imagen y texto */
+  margin-bottom: 110px; /* Espacio entre imagen y texto */
 }
 
 /* Textos */
 .split-section h1 {
   font-size: 18px;
+  position:top;
   
 }
 
@@ -297,8 +298,15 @@ header {
     .nav .account div:first-child {
         width: 100px;
         min-width: 90px;
-
     }
+    .banner-text h1 {
+        font-size: 90px;
+    }
+    .banner-item:last-child {
+        padding: 30px;
+    }
+
+
 
     }
 
@@ -317,6 +325,29 @@ header {
     .logo-img{
         width: 40px;
     }
+    
+    .banner-item {
+        flex-wrap: wrap;
+    }
 
+    .banner-item:nth-child(2), 
+    .banner-item:nth-child(4) {
+        flex-wrap: wrap-reverse;
+    }
+
+    .banner .banner-item img{
+        width: 100vw;
+
+    }
+
+    .banner-text{
+        padding: 40px 0;
+    }
+
+    .banner-text p {
+        font-weight: 400;
+        margin-bottom: 30px;
+
+    }
 
 }
