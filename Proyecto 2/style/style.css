@@ -168,8 +168,13 @@ header {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 50px;
-
 }
+
+.banner-item:last-child .banner-text h1 {
+    font-size: 25px;
+}
+
+
 
 /* medios */
 
@@ -208,10 +213,6 @@ header {
   
 }
 
-.split-section p {
-   
-
-}
 
 
 
