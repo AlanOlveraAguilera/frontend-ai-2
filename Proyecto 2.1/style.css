@@ -1,0 +1,354 @@
+/* RESET */
+
+* {
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* ESTILOS GLOBALES */
+
+body {
+    max-width: 1400px;
+    overflow-y: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#bar,
+#cross {
+    display: none;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 100px;
+    padding: 0 40px;
+    position: relative;
+    box-shadow: rgba(128, 128, 128, 0.726) 0 1px 3px;
+    z-index: 100;
+
+}
+
+.icon {
+    width: 15px;
+}
+
+.logo-img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav ul,
+.nav div:nth-child(2),
+.nav .location,
+.nav .account {
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+}
+
+
+.nav ul a{
+    line-height: 100%; 
+
+}
+
+.nav ul li {
+    margin-left: 20px;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-bottom: 5px solid transparent ;
+}
+
+.nav .location img {
+    padding-top: 5px;
+}
+
+.nav div:nth-child(2) div {
+    margin: 0 10px;
+}
+
+.nav .store {
+    color: black;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.button1,
+.button2 {
+    color: #000;
+    padding: 5px 15px;
+    border: 1px solid black ;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.button3,
+.button4 {
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 15px;
+    top: -18px;   
+    position: relative;
+}
+
+.button3{
+    border: 1px solid #D71F6B ;
+    color: #D71F6B;
+}
+
+.button4{
+    border: 1px solid #05547C ;
+    color: #05547C;
+}
+
+.button1:hover {
+    background-color: rgba(128,128, 128, 0.192);
+}
+
+.button2:hover {
+    background-color: grey;
+
+}
+
+.button2 {
+    color: white;
+    background-color: #000;
+}
+
+.banner .banner-item{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+   
+
+}
+
+.banner .banner-item img{
+    width: 50vw;
+    
+}
+
+
+
+.banner .banner-text{
+    text-align: center;
+    margin: 0 7%;
+}
+
+.banner-text h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.banner-text p {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.banner-item:last-child .banner-text h1 {
+    font-size: 25px;
+}
+
+
+
+/* medios */
+
+/* Contenedor principal dividido */
+/* Contenedor principal que divide secciones */
+.split-container {
+  display: flex; /* Alinear horizontalmente */
+  justify-content: space-between; /* Espaciado uniforme entre secciones */
+  gap: 50px; /* Espacio entre los dos contenedores */
+  padding: 0px; /* Espaciado interno del contenedor */
+}
+
+/* Cada sección individual */
+.split-section {
+  flex: 1; /* Ambos contenedores ocupan igual espacio */
+  display: flex; /* Organización interna */
+  flex-direction: column; /* Contenido apilado verticalmente */
+  align-items: center; /* Centrado horizontal */
+  justify-content: center; /* Centrado vertical */
+  padding: 0px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  text-align: center; /* Centrado del texto */
+}
+
+/* Estilo para las imágenes */
+.split-section img {
+  max-width: 100%; /* Limitar ancho de la imagen */
+  height: auto; /* Mantener proporción */
+  margin-bottom: 110px; /* Espacio entre imagen y texto */
+}
+
+/* Textos */
+.split-section h1 {
+  font-size: 18px;
+  position:top;
+  
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+/* Para pantallas de tablet */
+
+
+@media only screen and ( max-width:1024px) {
+    .logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    #bar {
+        display: block;       
+    }
+
+    #bar,
+    #cross {
+        cursor: pointer;
+    }
+
+
+
+    .nav{
+        position: absolute;
+        top: 100px;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        box-shadow: inset rgba(128, 128, 128, 0.726) 0 1px 3px;
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+        transition: all 0.5s;
+    }
+
+
+/* Cambio  en el nav debido a que no me gusta el espacio que le da */
+    .nav div{
+        width: 100%;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-bottom: 1px solid rgb(187, 184, 184);
+        margin-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .nav ul li{
+        font-size: 18px;
+        padding: 20px;
+        border-bottom: none;
+
+
+    }
+
+    .nav .nav-option {
+        flex-direction: column-reverse;
+
+    }
+
+    .nav .location {
+        padding-left: 40px;
+        height: 10px;
+    }
+
+    .nav .account {
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    .nav .account div:first-child {
+        width: 100px;
+        min-width: 90px;
+    }
+    .banner-text h1 {
+        font-size: 90px;
+    }
+    .banner-item:last-child {
+        padding: 30px;
+    }
+
+
+
+    }
+
+    /* Para pantallas de celulares */
+
+@media only screen and (max-width: 800px) {
+    header{
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    .nav{
+        top: 80px;
+    }
+
+    .logo-img{
+        width: 40px;
+    }
+    
+    .banner-item {
+        flex-wrap: wrap;
+    }
+
+    .banner-item:nth-child(2), 
+    .banner-item:nth-child(4) {
+        flex-wrap: wrap-reverse;
+    }
+
+    .banner .banner-item img{
+        width: 100vw;
+
+    }
+
+    .banner-text{
+        padding: 40px 0;
+    }
+
+    .banner-text p {
+        font-weight: 400;
+        margin-bottom: 30px;
+
+    }
+
+}
